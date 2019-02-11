@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="1.6.0" method="upgrade">
+    <name>COM_FBPAGEBUILDER</name>
+    <author>Apptha</author>
+    <creationDate>June 2011</creationDate>
+    <copyright>(C) 2005 - 2011 Open Source Matters. All rights reserved.
+    </copyright>
+    <license>GNU General Public License version 2 or later; see LICENSE.txt
+    </license>
+    <authorEmail>support@apptha.com</authorEmail>
+    <authorUrl>www.apptha.com</authorUrl>
+    <version>1.0</version>
+    <description>Creating a Facebook page is easy, and if we have a Joomla based site our job to create a Facebook page becomes much easier. The extension is easy to use and allows creating multiple pages.</description>
+
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.sql</file>
+		</sql>
+	</install>
+
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.sql</file>
+		</sql>
+	</uninstall>
+     <files folder="site">
+            <filename>fbpagebuilder.php</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>           
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>lib</folder>
+            <folder>views</folder>            
+        </files>
+    <administration>
+       
+       <menu img="components/com_fbpagebuilder/images/apptha-logo.gif">COM_FBPAGEBUILDER</menu>        
+        <submenu>
+            <menu link="option=com_fbpagebuilder&amp;view=templates" alt="Templates">COM_FBPAGEBUILDER_TEMPLATES</menu>
+            <menu link="option=com_fbpagebuilder&amp;view=pages" alt="Pages">COM_FBPAGEBUILDER_PAGES</menu>
+            <menu link="option=com_fbpagebuilder&amp;view=settings" alt="Applications">COM_FBPAGEBUILDER_APPLICATIONS</menu>
+            <menu link="option=com_fbpagebuilder&amp;view=systemsetting&amp;layout=edit&amp;id=1" alt="Settings">COM_FBPAGEBUILDER_SETTINGS</menu>
+        </submenu>
+
+
+        <files folder="admin">
+            <filename>uninstall.sql</filename>
+            <filename>install.sql</filename>
+            <filename>fbpagebuilder.php</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <folder>lib</folder>           
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <folder>images</folder>            
+            <folder>css</folder>
+            <folder>js</folder>
+        </files>
+        <languages folder="admin">
+            <language tag="en-GB">en-GB.com_fbpagebuilder.ini</language>
+            <language tag="en-GB">en-GB.com_fbpagebuilder.sys.ini</language>
+        </languages>       
+    </administration>
+</extension>
+

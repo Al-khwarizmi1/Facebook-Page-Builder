@@ -1,0 +1,127 @@
+@charset "utf-8";
+/*
+ ***********************************************************/
+/**
+ * @name          : Facebook Page Builder.
+ * @version	      : 1.2
+ * @package       : apptha
+ * @since         : Joomla 1.6
+ * @subpackage    : Facebook Page Builder.
+ * @author        : Apptha - http://www.apptha.com
+ * @copyright     : Copyright (C) 2011 Powered by Apptha
+ * @license       : GNU/GPL http://www.gnu.org/copyleft/gpl.html
+ * @abstract      : Customize facebook fanpage design and controll it from this component.
+ * @Creation Date : July 20 2011
+ * @Modified Date : November 8 2011
+ * */
+
+/*
+ ***********************************************************/
+.adminform{background-color:#FFF}
+.adminformlist li span{color:#666;font-weight:700}
+.inputbox{width:270px;height:17px}
+.orderbox{height:17px}
+h1 img{vertical-align:middle}
+h1{color:#444;font-size:18px;margin:5px 0}
+h1 a{color:#07B}
+h2{color:#333;font-size:14px;margin:0 5px}
+ul.tabNavigation{list-style:none;float:left;width:1204px;background:#627AAD;height:34px;margin:5px 0 0;padding:0}
+ul.tabNavigation li{width:115px;height:30px;display:inline-block;float:left;margin:0 8px 0 0}
+ul.tabNavigation li a{text-decoration:none;display:block;padding-top:10px;background:none;font-size:12px;cursor:pointer;text-align:center;color:#FFF!important;font-weight:700}
+ul.tabNavigation li a:hover{outline:none;background-color:#6d86b7;height:24px}
+ul.tabNavigation li a.selected{color:#333;font-weight:700;width:115px;display:block;background-color:#6d86b7;height:24px}
+ul.tabNavigation lu a:focus{outline:0}
+ul.tabNavigation li a span{margin:8px 0 0}
+ul.tmplNavigation{list-style:none;margin:5px 0;padding:0;width:1030px;}
+ul.tmplNavigation li{float:left;margin:17px;padding:0 0 20px}
+.tmpPre{display:block;border:solid 5px rgba(82,82,82,0.7);-moz-border-radius:5px;-webkit-border-radius:5px;margin:0}
+html>body .tmpPre{background:#EEE;border:solid 5px #525252}
+.tmpthumb{display:block;margin-left:55px;border:solid 5px rgba(82,82,82,0.7);-moz-border-radius:5px;-webkit-border-radius:5px}
+html>body .tmpthumb{display:block;margin-left:55px;background:#EEE;border:solid 5px #525252}
+#displaySelected{width:787px;display:block;position:absolute;z-index:-1;margin:0 auto}
+ul.displaySelected{float:left;list-style:none}
+#tmpl-1,#tmpl-2,#tmpl-3,#tmpl-4,#tmpl-5,#tmpl-6,#tmpl-7,#tmpl-8,#tmpl-9,#tmpl-10,#tmpl-11,#tmpl-12,#tmpl-13,#tmpl-14,#tmpl-17,#tmpl-20,#tmpl-23,#tmpl-24{float:left;text-align:center;margin:0 0 0 58px}
+#tmpl-1 img,#tmpl-2 img,#tmpl-3 img,#tmpl-4 img,#tmpl-5 img,#tmpl-6 img,#tmpl-7 img,#tmpl-8 img,#tmpl-9 img,#tmpl-10 img,#tmpl-11 img,#tmpl-12 img,#tmpl-13 img,#tmpl-14 img,#tmpl-17 img,#tmpl-20 img,#tmpl-23 img,#tmpl-24 img{border:solid 5px #999}
+div.displaySelectedThumb{margin-top:5px;display:block;position:relative}
+#tmplPreview{width:460px;float:left;margin:0 0 0 60px}
+#expTmplChooser{padding-top:20px;float:left;text-align:center;margin-left:65px}
+#clpTmplChooser{position:absolute;margin:40px 0 0 782px}
+div.tabs > div{margin-top:3px;padding:5px}
+#tmplCat{display:block;position:relative;margin:-12px 0 0;padding:0}
+#headline{line-height:24px;color:#666}
+#tmplCatDesc h2.tmplChsrCatDsc{width:auto;border-bottom:solid 1px #AAA;text-align:center;font-weight:700;margin:0 5px;padding:12px 0}
+#tmplCatDesc p.tmplChsrCatDsc{border-top:solid 1px #FFF;text-align:left;margin:0 5px;padding:8px 0}
+.tmplCatImgThumb{width:165px;height:190px;background:#EEE;border:solid 8px rgba(82,82,82,0.7);-moz-border-radius:8px;-webkit-border-radius:8px}
+html>body .tmplCatImgThumb{width:165px;height:190px;background:#EEE;border:solid 8px #525252}
+#customizeBtn{display:block;text-align:center;float:left;position:absolute;margin:-415px 0 0 572px}
+div.selectedThumbWrap{position:relative}
+.description a{color:#FFF;text-decoration:none}
+.description a:hover{color:#FFF;text-decoration:underline}
+a.changetmpl{color:#369;font-size:12px;text-decoration:underline}
+a.changetmpl:hover{color:#C90}
+div.description{left:0;bottom:0;position:absolute;display:none;background-color:rgba(82,82,82,0.7);border:solid 5px rgba(82,82,82,0.7);font-family:Arial, Helvetica, sans-serif;font-size:12px;color:#FFF;cursor:pointer;-moz-border-radius-bottomleft:8px;-moz-border-radius-bottomright:8px;-webkit-border-bottom-left-radius:8px;-webkit-border-bottom-right-radius:8px;height:40px}
+html>body .description{background:#333;height:50px}
+div.selectedDesc{left:0;bottom:0;position:absolute;display:none;background-color:rgba(82,82,82,0.7);border:solid 5px rgba(82,82,82,0.7);font-family:Arial, Helvetica, sans-serif;font-size:12px;color:#FFF;cursor:pointer}
+html>body .selectedDesc{background:#333}
+div.selectedDesc a.Customize{color:#EEE;text-decoration:none}
+div.selectedDesc a.Customize div:hover{color:#FF6;text-decoration:underline}
+html>body .description_content{color:#fff;margin:1px 5px 8px 6px}
+div.description_content{color:#fff;padding:0px 5px 8px 6px}
+#arrowCustomize{width:82px;height:108px;display:block;position:absolute;left:-10px;top:-65px;background:url(images/products/arrow.png) 0 0 no-repeat}
+div#customizeBtn a.Customize{left:40px;top:-5px}
+.side-block{border:1px solid #B3B3B3;margin:0 5px 5px}
+.side-block h3{height:22px;font-weight:700;font-size:11px;background-color:#627AAD;color:#fff;margin:0 0 5px;padding:4px 10px 0}
+.collapse{padding:0 5px 5px}
+#fb-info h1{margin:5px 0 0!important}
+#more-info{margin:10px 0 0}
+#cboxLoadedContent{overflow:auto}
+.crop-img{float:left;clear:both;margin:5px 10px}
+.imginstruction{float:left;color:gray;font-family:lucida grande,tahoma,verdana,arial,sans-serif;line-height:18px;margin:0 10px}
+.imginstruction h2{color:#3B5998;font-size:11px;margin:0;padding:0 0 10px}
+.imginstruction p{font-size:11px;margin:0;padding:0}
+#install-page img{cursor:pointer;margin: 30px 0 0 109px;}
+#install-page a{position:absolute;text-decoration:none;color:#FFF;font-size:11px;font-weight:700;margin:8px 0 0 5px}
+.pophead{margin:5px 10px}
+.crop{background:url(../images/crop.png) 0 0 no-repeat;width:61px;height:24px;display:block;float:left;cursor:pointer}
+.crop a{color:#FFF;font-size:11px;font-weight:700;position:absolute;text-decoration:none;margin:5px 0 0 15px}
+a.imageupload,a.videoupload,a.contentupload{position:absolute;zindex:5000;background:#333;color:#FFF!important;font-size:11px;border:1px solid #BBB;width:93px;display:block!important;padding:3px}
+.imgdelete{background:url(../images/delete.png) 0 0 no-repeat;width:61px;height:24px;display:block;margin-left:15px;float:left;cursor:pointer}
+.imgdelete a{color:#FFF;font-size:11px;font-weight:700;position:absolute;text-decoration:none;margin:5px 0 0 12px}
+.duplicate-content{width:97%;height:148px;border:solid 1px #CCC;border-top:none;margin:0 2px 5px;padding:5px}
+.dialog_title{background:#6D84B4;border:1px solid #3B5998;border-bottom:none;color:#FFF;font-size:14px;font-weight:700;height:27px;margin:0}
+.dialog_title span{display:block;padding:5px 10px}
+.dialogBoxGray{background-color:#F2F2F2;border:1px solid #CCC;padding:10px}
+.contentsave a{color:#FFF;font-size:11px;font-weight:700;position:absolute;cursor:pointer;text-decoration:none;background-color:#5B74A8;border:#29447E 1px solid;margin:0 0 0 -90px;padding:3px}
+.contentsave a:hover,.contentsave a:Focus,.contentsave a:Active{border:1px solid #999;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.1);cursor:pointer;font-size:11px;font-weight:700;line-height:normal!important;text-align:center;text-decoration:none;white-space:nowrap;margin:0 0 0 -90px;padding:3px}
+.youtubevideo{margin:20px 0 0 10px}
+.getvideo{background:url(../images/videosave.png) 0 0 no-repeat;width:61px;height:24px;display:block;float:right;cursor:pointer;margin:-20px 15px 0 0}
+.editor-top{width:99%;margin:2px 2px 0}
+.rightcolumn{width:200px;float:right;}
+.apptitle{margin:0 0 10px}
+.appha2{background-color:#F2F2F2;border-bottom:none;border-top:solid 1px #E2E2E2;color:#333;font-size:11px;margin:0;padding:4px 0 5px}
+.apptitle select{width:150px}
+.apptitle span{width:150px;color:red;margin-top:10px;display: block;}
+.installpage{margin: 200px 0 0;width:130px;height:38px;background:url(../images/install.png) 0 0 no-repeat;cursor:pointer}
+.editdesc{width:400px;float:left}
+.editdesc h4{color:#3B5998;font-size:11px;margin:0;padding:10px 0}
+.editdesc p{margin:0;padding:0}
+.swfbutton{margin:10px}
+.desc{font-size: 11px;padding: 3px 0 0 4px;  position: absolute;width: 600px;}
+.continue{margin:3px 10px 0 0; float: right;background:url(../images/continue.jpg) 0 0 no-repeat;cursor:pointer;width:95px;height:28px;}
+.buynow{background:url(../images/buynow_btn.jpg) 0 0 no-repeat;cursor:pointer;width:66px;height:20px;margin-top:6px;display:block;float: left;}
+.freetrail{background:url(../images/free_trial.jpg) 0 0 no-repeat;cursor:pointer;width:141px;height:20px;margin:6px 0 0 10px;display:block;float: left;}
+.continuefull{background:url(../images/continuetrial.jpg) 0 0 no-repeat;cursor:pointer;width:72px;height:20px;margin:6px 0 0 10px;display:block;float: left;}
+.clearfix:after{content:".";display:block;clear:both;visibility:hidden;line-height:0}
+#create-comp,#create-appl{margin:21px 0 0}
+#create-comp h2,#create-appl h2{margin:5px 0}
+#fb-login,#fb-logout,.contentsave{float:right}
+.settingdesc{margin: 8px 0 0 0;float: left;}
+.createnewpage{background:url(../images/create_new_page.jpg) 0 0 no-repeat;cursor:pointer;width:130px;height:20px;margin: 6px 0 10px 0;display:block;}
+#temp_continue a{
+    margin: 9px 0 0 20px;width: 80px;float: left;background:url(../images/continuetrial.jpg) 0 0 no-repeat;height:20px;
+}
+#save{width:130px;height:38px;background:url(../images/pagesave.png) 0 0 no-repeat;cursor:pointer;margin: 76px;float:right;
+}
+.videotutorial{background:url(../images/video.gif) 0 0 no-repeat;cursor:pointer;}
+.fblogout{  background:url(../images/facebook-logo.gif) 0 0 no-repeat;cursor:pointer;}
+ #sel-error{color:red;display:block;margin: 4px 0 0 0;}

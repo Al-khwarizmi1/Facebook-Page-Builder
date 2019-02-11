@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ ***********************************************************/
+/**
+ * @name          : Facebook Page Builder.
+ * @version	      : 1.2
+ * @package       : apptha
+ * @since         : Joomla 1.6
+ * @subpackage    : Facebook Page Builder.
+ * @author        : Apptha - http://www.apptha.com
+ * @copyright     : Copyright (C) 2011 Powered by Apptha
+ * @license       : GNU/GPL http://www.gnu.org/copyleft/gpl.html
+ * @abstract      : Customize facebook fanpage design and controll it from this component.
+ * @Creation Date : July 20 2011
+ * @Modified Date : November 8 2011
+ * */
+
+/*
+ ***********************************************************/-->
+<form>
+    <fieldset>
+        <field
+                        name="id"
+                        type="hidden"
+                />
+       
+        <field
+                        name="api_id"
+                        type="text"
+                        label="COM_FBPAGEBUILDER_SETTING_API_LABEL"
+                        description="COM_FBPAGEBUILDER_SETTING_API_DESC"
+                        size="40"
+                        class="inputbox"
+                        default=""
+                />
+
+        <field
+                        name="api_secret"
+                        type="text"
+                        label="COM_FBPAGEBUILDER_SETTING_APISEC_LABEL"
+                        description="COM_FBPAGEBUILDER_SETTING_APISEC_DESC"
+                        size="40"
+                        class="inputbox"
+                        default=""
+                />
+         <field
+                        name="license"
+                        type="text"
+                        label="COM_FBPAGEBUILDER_SETTING_LICENSE_LABEL"
+                        description="COM_FBPAGEBUILDER_SETTING_LICENSE_DESC"
+                        size="70"
+                        class="inputbox"
+                        default=""
+                        onchange="changeClass()"
+                />
+    </fieldset>
+</form>

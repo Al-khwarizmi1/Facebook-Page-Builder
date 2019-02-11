@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ /*
+ ***********************************************************/
+/**
+ * @name          : Facebook Page Builder.
+ * @version	      : 1.2
+ * @package       : apptha
+ * @since         : Joomla 1.6
+ * @subpackage    : Facebook Page Builder.
+ * @author        : Apptha - http://www.apptha.com
+ * @copyright     : Copyright (C) 2011 Powered by Apptha
+ * @license       : GNU/GPL http://www.gnu.org/copyleft/gpl.html
+ * @abstract      : Customize facebook fanpage design and controll it from this component.
+ * @Creation Date : July 20 2011
+ * @Modified Date : November 8 2011
+ * */
+
+/*
+ ***********************************************************/
+ 
+-->
+<form>
+    <fieldset>
+        <field
+                        name="id"
+                        type="hidden"
+                />
+        <field
+                        name="title"
+                        type="text"
+                        label="COM_FBPAGEBUILDER_TITLE_LABEL"
+                        description="COM_FBPAGEBUILDER_TITLE_DESC"
+                        size="40"
+                        class="inputbox"
+                        default=""
+                />
+        <field
+                        name="description"
+                        type="textarea"
+                        label="COM_FBPAGEBUILDER_DESCRIPTION_LABEL"
+                        description="COM_FBPAGEBUILDER_DESCRIPTION_DESC"
+                        rows="3"
+                        class="textarea"
+                        default=""
+                />
+        <field
+                        name="content"
+                        type="editor"
+                        label="COM_FBPAGEBUILDER_TEMPLATECONTENT_LABEL"
+                        description="COM_FBPAGEBUILDER_TEMPLATECONTENT_DESC"
+                        width = "60%"
+                        rows = "30"
+                        class="inputbox"
+                        default=""
+                />
+        <field name="published" type="radio"
+			label="COM_FBPAGEBUILDER_PUBLISHED_LABEL" description="COM_FBPAGEBUILDER_PUBLISHED_DESC"
+			default="0"
+		>
+            <option value="1" >COM_FBPAGEBUILDER_REQUIRED_YES
+            </option>
+            <option value="0">COM_FBPAGEBUILDER_REQUIRED_NO
+            </option>
+
+        </field>
+    </fieldset>
+</form>
